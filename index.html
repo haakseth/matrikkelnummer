@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="John">
+
+    <title>Konverter matrikkelnumre</title>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="js/matrikkelnummer.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+        <h2>Konverter matrikkelnummer</h2>
+		<hr/>
+        <h3>Matrikkelident</h3>
+		<div class="row">
+			<div class="col-xs-8"><input id="mid" class="form-control" placeholder="Matrikkelident"></div>
+			<div class="col-xs-2"><button id="convert-mid-button" class="btn btn-am btn-primary" type="button">Konverter</button></div>
+			<div class="col-xs-2"><button id="add-mid-button" class="btn btn-am btn-primary" type="button">Legg til</button></div>
+		</div>
+        <hr>
+		<div class="row">
+			<div class="col-xs-12"><input id="mid-list" class="form-control" placeholder="Kommaseparert liste for tjenesteurler"></div>
+		</div>
+		<hr/>		
+		<h3>Matrikkelnummer</h3>
+		<div class="row">
+			<div class="col-xs-2">
+				<label for="knr">Knr:</label>
+				<input type="text" id="knr" class="form-control" placeholder="Knr">
+			</div>
+			<div class="col-xs-2">
+				<label for="gnr">Gnr:</label>
+				<input type="text" id="gnr" class="form-control" placeholder="Gnr">
+			</div>
+			<div class="col-xs-2">
+				<label for="Bnr">Bnr:</label>
+				<input type="text" id="bnr" class="form-control" placeholder="Bnr">
+			</div>
+			<div class="col-xs-2">
+				<label for="fnr">Fnr:</label>
+				<input type="text" id="fnr" class="form-control" placeholder="Fnr">
+			</div>
+			<div class="col-xs-2">
+				<label for="snr">Snr:</label>
+				<input type="text" id="snr" class="form-control" placeholder="Snr">
+			</div>
+			<div class="col-xs-2">
+				<button id="convert-mnr-button" class="btn btn-sm-2 btn-primary" type="button">Konverter</button>
+			</div>
+		</div>
+		<hr>
+		<h3>Søkestreng for Eiendomsinfo</h3>
+		<div class="row">
+			<div class="col-xs-10"><input id="sok" class="form-control" placeholder="f eks 0220 92/297/0/2"></div>
+		</div>
+		<hr>
+		<h3>Søkestreng fra Kommunekart</h3>
+		<div class="row">
+			<div class="col-xs-10"><input id="sokKomm" class="form-control" placeholder="f eks 0220 - 92/297/0/2"></div>
+			<div class="col-xs-2"><button id="convert-komm-button" class="btn btn-am btn-primary" type="button">Konverter</button></div>
+		</div>
+		<hr>
+		<div id="alert-area"></div>
+        
+    </div> 
+  </body>
+</html>
